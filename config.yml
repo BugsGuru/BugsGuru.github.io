@@ -1,0 +1,223 @@
+baseURL: "http://BugsGuru.github.io/"
+languageCode: "en-us"
+defaultContentLanguage: hello # 最顶部首先展示的语言页面
+defaultContentLanguageInSubdir: true
+title: "My Blog"
+paginate: 5 # 首页每页显示的文章数
+# theme: PaperMod
+theme: hugo-PaperMod
+
+languages:
+  hello:
+    weight: 1
+    profileMode:
+      enabled: true
+      title: 我没有失败过。</br>要么赢得胜利，要么学到东西。
+      subtitle: "</br>欢迎光临👏🏼" #</br>联系方式👇
+      imageUrl: "img/TheJourneyofLife.gif"
+      imageTitle: The Journey of Life
+      imageWidth: 300
+      imageHeight: 300
+      # buttons:
+      #   - name: 👨🏻‍💻技术
+      #     url: posts/tech
+      #   - name: 📕阅读
+      #     url: posts/read
+      #   - name: 🏖生活
+      #     url: posts/life
+
+menu:
+  main:
+    - identifier: home
+      name: 🏠 首页
+      url: /
+      weight: 100
+    - identifier: archives
+      name: 📚 文章
+      url: /archives/
+      weight: 500
+    - identifier: categories
+      name: 🧩 分类
+      url: /categories/
+      weight: 600
+    - identifier: tags
+      name: 🔖 标签
+      url: /tags/
+      weight: 700
+    - identifier: about
+      name: 🙋🏻‍♂️ 关于
+      url: /about/
+      weight: 800
+    - identifier: example
+      name: GitHub
+      url: https://github.com/BugsGuru
+      weight: 900
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
+hasCJKLanguage: true # 自动检测是否包含中文日文韩文,如果文章中使用了很多中文引号的话可以开启
+enableInlineShortcodes: true
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+permalinks:
+  post: "/:title/"
+  # post: "/:year/:month/:day/:title/"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  socialIcons:
+  # - name: github
+  #   url: "https://github.com/BugsGuru"
+
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: LwQ's blog
+  description: lwq's blog
+  keywords: [Blog, Portfolio, PaperMod]
+  author: lwq
+  # author: ["Me", "You"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  # DateFormat: "2006-01-02"
+  defaultTheme: light # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  hideFooter: false # 隐藏页脚
+  VisitCount: true
+
+  ShowLastMod: true #显示文章更新时间
+
+  ShowToc: true # 显示目录
+  TocOpen: true # 自动展开目录
+  comments: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "LwQ's BLOG"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # HUGO 默认转义 Markdown 文件中的 HTML 代码，如需开启的话
+
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    codeFences: true # 代码围栏功能
+    guessSyntax: true # 猜测语法
+    lineNos: true # 是否显示行号，我比较喜欢显示，所以我设置的为 true.
+    lineNoStart: 1 # 行号从编号几开始，一般从 1 开始。
+    # lineNumbersInTable：使用表来格式化行号和代码,而不是 标签。这个属性一般设置为 true.
+    # noClasses：使用 class 标签，而不是内嵌的内联样式
+    # style: monokai
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
