@@ -5,16 +5,16 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - blog
   schedule:
     # Runs everyday at 8:00 AM
     - cron: "0 0 * * *"
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
@@ -35,6 +35,6 @@ jobs:
           github_token: ${{ secrets.BLOGKEY }}
           publish_dir: ./public
           # external_repository: username/username.github.io
-          publish_branch: blog # default: gh-pages
+          publish_branch: main # default: gh-pages
           commit_message: ${{ github.event.head_commit.message }}
           # cname: custom.domain.com
