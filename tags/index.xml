@@ -5,25 +5,6 @@
     <link>http://BugsGuru.github.io/tags/</link>
     <description>Recent content in Tags on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Mar 2023 22:50:43 +0800</lastBuildDate><atom:link href="http://BugsGuru.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>tag 1</title>
-      <link>http://BugsGuru.github.io/tags/tag-1/</link>
-      <pubDate>Sat, 04 Mar 2023 22:50:43 +0800</pubDate>
-      
-      <guid>http://BugsGuru.github.io/tags/tag-1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag 2</title>
-      <link>http://BugsGuru.github.io/tags/tag-2/</link>
-      <pubDate>Sat, 04 Mar 2023 22:50:43 +0800</pubDate>
-      
-      <guid>http://BugsGuru.github.io/tags/tag-2/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="http://BugsGuru.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
