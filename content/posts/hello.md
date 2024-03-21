@@ -1,24 +1,21 @@
 ---
 title: "Hello"
 date: 2023-03-04T21:29:29+08:00
-draft: false
-
+draft: true
 author: ["lwq"]
-
-
 categories:
-# - category 1
+ - category 1
 # - category 2
 
-# tags:
-# - tag 1
+tags:
+ - tag 1
 # - tag 2
 
 keywords:
 - hello
 
-description: "" # 文章描述，与搜索优化相关
-summary: "" # 文章简单描述，会展示在主页
+description: "hello" # 文章描述，与搜索优化相关
+summary: "hello" # 文章简单描述，会展示在主页
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: ""
 

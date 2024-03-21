@@ -1,0 +1,75 @@
+baseURL: https://example.org/
+title: LwQ's Blog
+theme: ["PaperMod"]
+#languageCode: en-us
+#copyright: © 2024 LwQ's Blog
+
+menu:
+  main:
+    - name: 🏠 home
+      url: /
+      weight: 1
+    - name: 🔍️ search
+      url: /search/
+      weight: 4
+    - name: 📚 archives
+      url: /archives/
+      weight: 5
+    - name: 📂 categories
+      url: /categories/
+      weight: 6
+    - name: 🔖 tags
+      url: /tags/
+      weight: 7
+
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "LwQ's Blog"
+  author: ["LwQ"]
+
+  defaultTheme: auto
+  disableThemeToggle: false # 禁用黑白
+  ShowShareButtons: false # 底部显示分享栏
+  ShowReadingTime: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  TocOpen: true
+
+  profileMode:
+    enabled: true
+    title: 每个技术人员应该都有一个改变世界情怀，<br/>哪怕只能改变一点点。
+    subtitle: "</br>Welcome! 👏🏼"
+    imageUrl: "img/TheJourneyofLife.gif"
+    imageTitle: The Journey of Life
+    imageWidth: 300
+    imageHeight: 300
+#    buttons:
+#      - name: Archives
+#        url: archives
+
+  socialIcons: # optional
+    - name: "GitHub"
+      title: LwQ's Github
+      url: "https://github.com/BugsGuru"
+
+outputs:
+  home: ["HTML","RSS","JSON"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+#    anchorLineNos: true
+#    codeFences: true
+#    guessSyntax: true
+#    lineNos: true
+#    style: monokai
