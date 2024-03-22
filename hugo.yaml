@@ -12,8 +12,8 @@ menu:
     - name: 🔍️ search
       url: /search/
       weight: 4
-    - name: 📚 archives
-      url: /archives/
+    - name: 📚 posts
+      url: /posts/
       weight: 5
     - name: 📂 categories
       url: /categories/
@@ -24,7 +24,7 @@ menu:
 
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable Google Analytics, opengraph, twitter-cards and schema.
   description: "LwQ's Blog"
   author: ["LwQ"]
 

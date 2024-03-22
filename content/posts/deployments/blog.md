@@ -28,11 +28,15 @@ git submodule update --init --recursive # needed when you reclone your repo (sub
 # theme: ["PaperMod"]
 
 # Creat posts inside the folder of your Hugo site `MyFreshWebsite/content/`
+# Test locally
 
+# Commit and Push to Github
+# Configure Github Action to CD your blog
 ```
 
 ## 参考
 - [Hugo文档](https://gohugo.io/installation/)
+- [HugoGithubPages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 - [PaperMod文档](https://adityatelange.github.io/hugo-PaperMod/)
 - [PaperMod配置参数](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/)
 - [PaperModExampleSite](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
